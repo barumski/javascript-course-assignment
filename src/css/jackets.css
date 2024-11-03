@@ -1,0 +1,108 @@
+
+
+
+
+/*----------------------------Trending-items-----------------------*/
+
+.trending-jacket-1 a {
+    text-decoration: none;
+}
+
+.trending-jacket-1 a:visited {
+    color: #023047;
+}
+
+.trending-jackets-container,
+.recommended-item-container {
+   display: flex;
+   justify-content: space-between; 
+}
+
+.trending-jacket-1,
+.trending-jacket-2,
+.trending-jacket-3,
+.recommended-item-1,
+.recommended-item-2,
+.recommended-item-3 {
+    text-align: center;
+    width: 30%;
+    padding: 50px;
+}
+
+.trending-jacket-1 img,
+.trending-jacket-2 img,
+.trending-jacket-3 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.item {
+    font-size: 28px;
+    color: #023047;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 2px;
+}
+
+.brand {
+    font-size: 20px;
+    color: #023047;
+    font-family: 'Inter', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.before-price {
+    font-size: 20px;
+    color: #33586b50;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 2px;
+}
+
+.price {
+    font-size: 28px;
+    color: #023047;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.price-2 {
+    font-size: 28px;
+    color: #023047;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+
+    .trending-jackets-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trending-jacket-1,
+    .trending-jacket-2,
+    .trending-jacket-3 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .recommended-item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .recommended-item-1,
+      .recommended-item-2,
+      .recommended-item-3 {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}

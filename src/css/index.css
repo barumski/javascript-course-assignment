@@ -1,0 +1,247 @@
+
+/*----------------------------Title-------------------------------*/
+
+.title-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-image-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.title-image-container img {
+    width: 100vw;
+    height: auto;
+    display: flex;
+}
+
+.overlay-text {
+    position: absolute;
+    color: #8ECAE6;
+    font-family: 'Inter', sans-serif;
+}
+
+.top-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 75px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.left-text {
+    position: absolute;
+    text-align: left;
+    top: 40%;
+    left: 50px;
+    bottom: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    letter-spacing: 3.5px;
+    line-height: 2;
+    white-space: nowrap;
+}
+
+.left-text p {
+    margin: 0;
+}
+
+.bold-text {
+    font-weight: 900;
+}
+
+.discover-button {
+    position: absolute;
+    bottom: 200px;
+    right: 150px;
+    background-color: #023047;
+    color: #8ECAE6;
+    padding: 35px 60px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+
+.discover-button:hover {
+    background-color: #FB8500;
+    color: #ffffff;
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*--------------------------Category--------------------------------*/
+
+.category-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.men-category,
+.women-category {
+    flex: 1;
+    margin-right: 10px;
+    position: relative;
+}
+
+.men-category img,
+.women-category img {
+    width: 100%;
+    height: auto;
+}
+
+.men-category-button,
+.women-category-button {
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+    padding: 10px 45px;
+    margin-top: -5px;
+    background-color: #023047;
+    color: #8ECAE6;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 2);  
+}
+
+.men-category-button:hover,
+.women-category-button:hover {
+    background-color: #FB8500;
+    color: #ffffff;
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*----------------------------Banner-------------------------------*/
+
+.banner-container {
+    text-align: center;
+    background-color: #023047;
+    padding-top: 0.5px;
+    margin-top: 50px;
+}
+
+.banner-text {
+    font-size: 65px;
+    color: #FFB703;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 30px;
+}
+
+.banner-button {
+    background-color: #FFB703;
+    color: #023047;
+    border: 2px solid #FB8500;
+    padding: 15px 150px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.banner-button:hover {
+    background-color: #FB8500;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*----------------------------Media--------------------------------*/
+
+@media screen and (max-width: 600px) {
+    .title-container {
+        height:auto
+    }
+
+    .title-image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay-text {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .top-text {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .left-text {
+        font-size: 12px;
+        left: 20px;
+        right: 20px;
+        text-align: center;
+        top: 35%;
+    }
+
+    .discover-button {
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .category-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .men-category,
+    .women-category {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .men-category img,
+    .women-category img {
+        width: 100%;
+    }
+
+    .men-category-button,
+    .women-category-button {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+    }
+
+    .banner-text {
+        font-size: 30px;
+    }
+
+    .banner-button {
+        padding: 15px 50px;
+        font-size: 16px;
+    }
+
+
+}
+
+

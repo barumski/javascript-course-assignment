@@ -1,0 +1,194 @@
+
+
+
+/*----------------------------Title----------------------------*/
+
+.title-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.image-container img {
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    top: 15rem;
+    left: 60%;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/*-------------------------------------------------------------*/
+
+/*---------------------------Content---------------------------*/
+
+.container {
+    display: flex;
+}
+
+.welcome-container,
+.center-container,
+.bottom-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text,
+.commitment-text,
+.customer-service-text {
+    background-color: #023047;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.quality-text,
+.adventure-text,
+.join-us-text {
+    background-color: #219EBC;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    margin-bottom: -6px;
+}
+
+.top-image-container,
+.center-image-container,
+.bottom-image-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.image-top img,
+.image-middle img,
+.image-bottom img {
+    width: 132.2%;
+    height: auto;
+}
+
+
+/*-------------------------------------------------------------*/
+
+/*-----------------------------Text----------------------------*/
+
+.title-light {
+    color: #ffffff;
+}
+
+.title-dark {
+    color: #023047;
+}
+
+.title-light,
+.title-dark {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    padding: 40px 20px;
+    flex: 1;
+    margin-bottom: -6px;
+} 
+
+.content-light {
+    color: #ffffff;
+}
+
+.content-dark {
+    color: #023047;
+}
+
+.content-light,
+.content-dark {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .title-container {
+        align-items: center;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .overlay-text {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        top: 30%;
+    }
+    
+    .welcome-container,
+    .center-container,
+    .bottom-container {
+        width: 100%;
+    }
+    
+    .welcome-text,
+    .commitment-text,
+    .customer-service-text,
+    .quality-text,
+    .adventure-text,
+    .join-us-text {
+        padding: 20px;
+    }
+    
+    .top-image-container,
+    .center-image-container,
+    .bottom-image-container {
+        width: 100%;
+    }
+    
+    .image-top img,
+    .image-bottom img {
+        width: 100%;
+    }
+
+    .image-middle img {
+        display: none;
+    }
+    
+    .title-light,
+    .title-dark {
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    .content-light,
+    .content-dark {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+

@@ -1,0 +1,369 @@
+
+
+
+.page-links {
+    padding-left: 2rem;
+}
+
+.page-links,
+.page-links a {
+    font-size: 16px;
+    color: #023047;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    padding-top: 1rem;
+
+}
+
+
+/*------------------------------Forms------------------------------*/
+
+
+.product-container {
+    display: flex;
+    border: 2px solid #023047;
+    padding: 100px 50px;
+    margin: 50px 100px;
+}
+
+.product-image,
+.product-text,
+.product-price,
+.product-amount,
+.total-price
+.trashcan {
+    flex: 1 1 100%;
+    padding: 10px;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sub {
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    color: #023047;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.amount {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #023047;
+    padding: 10px;
+    margin-bottom: 150px;
+}
+
+.jacket-price {
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    color: #023047;
+    font-weight: 700;
+}
+
+
+.product-amount {
+    display: flex;
+    align-items: center;
+}
+
+.image1,
+.image2 {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 125px;
+}   
+
+.product-image img {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.total-price,
+.trashcan {
+    flex-basis: 50%;
+}
+
+.total-price {
+    padding-right: 5px;
+}
+
+.trashcan {
+    padding-left: 5px;
+    margin-top: 44px;
+}
+
+.product-text p {
+    font-size: 20px;
+    color: #023047;
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.product-container h2 {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #023047;
+}
+
+.container {
+    display: flex;
+    padding: 100px;
+    gap: 100px;
+}
+
+.left-container,
+.right-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #023047;
+    padding: 35px;
+}
+
+
+.title {
+    font-size: 45px;
+    font-family: 'Inter', sans-serif;
+    color: #023047;
+    text-align: left;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.delivery-info,
+.shipping-info,
+.options,
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.direction {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-left: 25px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    color: #023047;
+}
+
+.account {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-left: 25px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    color: #023047;
+}
+
+form {
+    align-items: center;
+}
+
+.information-form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.form__input {
+    width: 400px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #023047;
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px;
+}
+
+.information-form label{
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #023047;
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
+.delivery-form {
+    border: none;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.option {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.options label {
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: #023047;
+    font-weight: bold;
+    padding: 5px 20px;
+
+}
+
+.options input[type=radio] {
+    margin-right: 10px;
+}
+
+input[type=radio] {
+    transform: scale(2);
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 50px
+}
+
+.summary-item h2 {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    color: #023047;
+}
+
+.pay-button {
+    border: none;
+    border-radius: 10px;
+    padding: 30px 155px;
+    color: #8ECAE6;
+    background-color: #023047;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 200px;  
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.pay-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pay-option label {
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: #023047;
+    font-weight: bold;
+}
+
+.pay-option input[type=radio] {
+    margin-right: 20px;
+}
+
+.images {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .tag-container {
+        display: none;
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%;
+        border: none;
+        padding: 20px 10px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        padding: 20px;
+        border: none;
+    }
+
+    .product-image img {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .product-price {
+        margin: -20px 0;
+    }
+
+    .product-amount {
+        margin-left: -15px;
+    }
+
+    .total-price {
+        margin-top: -150px;
+        margin-left: 10px;
+    }
+
+    .product-text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .trashcan {
+        margin-bottom: 20px;
+    }
+
+    .checkout-tags p,
+    .product-text h2,
+    .product-container p,
+    .form__input,
+    .options label,
+    .summary-item h2,
+    .pay-button {
+        font-size: 14px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 24px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+}

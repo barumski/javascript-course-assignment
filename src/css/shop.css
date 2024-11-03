@@ -1,0 +1,87 @@
+
+
+
+
+.page-links {
+    padding-left: 2rem;
+}
+
+.page-links,
+.page-links a {
+    font-size: 16px;
+    color: #023047;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    padding-top: 1rem;
+}
+
+.jacket-1 a {
+    text-decoration: none;
+}
+
+.jacket-1 a:visited {
+    color: #023047;
+}
+
+.jacket-row-1,
+.jacket-row-2,
+.jacket-row-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jacket-1,
+.jacket-2,
+.jacket-3,
+.jacket-4,
+.jacket-5,
+.jacket-6,
+.jacket-7 {
+    text-align: center;
+    width: 30%;
+    padding: 50px;
+}
+
+.jacket-1 img,
+.jacket-2 img,
+.jacket-3 img,
+.jacket-4 img,
+.jacket-5 img,
+.jacket-6 img,
+.jacket-7 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .jacket-row-1,
+    .jacket-row-2,
+    .jacket-row-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jacket-1,
+    .jacket-2,
+    .jacket-3,
+    .jacket-4,
+    .jacket-5,
+    .jacket-6,
+    .jacket-7 {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .jacket-1,
+    .jacket-2,
+    .jacket-3,
+    .jacket-4,
+    .jacket-5,
+    .jacket-6,
+    .jacket-7 {
+        padding: 20px;
+    }
+
+}
