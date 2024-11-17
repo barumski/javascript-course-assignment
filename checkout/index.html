@@ -12,7 +12,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
   <title>Rainydays - Checkout</title>
   <meta property="og:title" content="Rainydays - Checkout">
   <meta property="og:url" content="https://www.raiydays.com/checkout">
@@ -53,37 +52,6 @@
     <h1 class="title-text">Checkout</h1>
 
     <div class="seperator-line"></div>
-
-    <section class="product-container">
-      <div class="product-image">
-        <img src="/assets/images/jackets/RainyDays_Jacket2-cropped.jpg" alt="Image of Scott Defined Tech Jacket">
-      </div>
-      <div class="product-text">
-        <h2 class="type">Scott Defined Tech Jacket</h2>
-        <p class="color-size">Color: Dark grey</p>
-        <p class="color-size">Size: XL</p>
-      </div>
-      <div class="product-price">
-        <p class="jacket-price">$ 69,99</p>
-      </div>
-      <div class="product-amount">
-        <div class="image1">
-          <img src="/assets/images/plus-symbol.png" alt="Plush icon to add one item"></div>
-        <p class="amount">1</p>
-        <div class="image2">
-          <img src="/assets/images/minus-symbol.png" alt="Minus icon to reduce one item"></div>
-      </div>
-      <div class="total-price">
-        <p class="sub">$ 69,99</p>
-      </div>
-      <div class="trashcan">
-        <a href="/shop/shop.html">
-          <img src="/assets/images/Trashcan.png" alt="Trashcan icon to remove item"></a>
-      </div>
-    </section>
-
-
-
 
     <div class="container">
       <section class="left-container">
@@ -184,26 +152,12 @@
         </div>
         <h1 class="title">Order Summary</h1>
         <div class="summary">
-          <div class="seperator-line"></div>
-          <div class="summary-item">
-            <h2>Subtotal</h2>
-            <h2>$ 89,99</h2>
-          </div>
-          <div class="summary-item">
-            <h2>Discount</h2>
-            <h2>$-20,00</h2>
-          </div>
-          <div class="summary-item">
-            <h2>Shipping</h2>
-            <h2>$  0,00</h2>
-          </div>
-          <div class="seperator-line"></div>
           <div class="summary-item">
             <h2>Order total</h2>
-            <h2>$  69,99</h2>
+            <h2>$ <span id="order-total"></span></h2>
           </div>
-          <a href="/checkout/confirmation/index.html"><button class="pay-button">PAY NOW</button></a>
         </div>
+          <a href="/checkout/confirmation/index.html"><button class="pay-button">PAY NOW</button></a>
       </section>
     </div>
 
@@ -227,40 +181,15 @@
       </div>      
     </section>
 
-    <h2 class="section-title"> Recommended For You </h2>
-
-    <section class="recommended-item-container">
-
-      <div class="recommended-item-1">
-        <img src="/assets/images/jackets/RainyDays_Jacket3-cropped.jpg" alt="Scott insuloft superlight jacket">
-        <p class="item">Scott Insuloft Superlight Jacket</p>
-        <p class="brand">Scott</p>
-        <p class="before-price">$ 59,99</p>
-        <p class="price">$ 49,99</p>
-      </div>
-
-      <div class="recommended-item-2">
-        <img src="/assets/images/jackets/RainyDays_Jacket4-cropped.jpg" alt="Scott explorair jacket">
-        <p class="item">Scott Explorair Jacket</p>
-        <p class="brand">Scott</p>
-        <p class="before-price">$ 79,99</p>
-        <p class="price">$ 65,99</p>
-      </div>
-
-      <div class="recommended-item-3">
-        <img src="/assets/images/jackets/RainyDays_Jacket7-cropped.jpg" alt="of Patagonia fleece jacket">
-        <p class="item">Patagonia fleece jacket</p>
-        <p class="brand">Patagonia</p>
-        <p class="price-2">$ 199</p>
-      </div>
-
-    </section>
-
-    <div class="back-button-container">
-      <a href="/index.html"><button class="back-button">Back</button></a>
-    </div>
-
   </main>
+
+  <script type="module">
+    const cartTotal = localStorage.getItem("cartTotal");
+    const orderTotalElement = document.querySelector("#order-total");
+    if (cartTotal) {
+      orderTotalElement.textContent = parseFloat(cartTotal).toFixed(2);
+    }
+  </script>
 
 
   <footer>

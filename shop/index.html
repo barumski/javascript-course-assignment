@@ -18,6 +18,7 @@
   <meta property="og:url" content="https://www.raiydays.com/shop">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/assets/images/RainyDays_Logo1.png">
+  <script src="/scripts/main.mjs" type="module"></script>
 </head>
 
 
@@ -54,69 +55,14 @@
 
     <div class="seperator-line"></div>
 
+    <div class="filter">
+      <button class="filter-button" id="filter-all">All</button>
+      <button class="filter-button" id="filter-men">Men</button>
+      <button class="filter-button" id="filter-women">Women</button>
+    </div>
+
     <section class="jacket-row-1">
-      <div class="jacket-1">
-        <a href="/product/index.html">
-          <img src="/assets/images/jackets/RainyDays_Jacket2-cropped.jpg" alt="Scott defined tech jacket">
-        <p class="item">Scott Defined Tech Jacket</p>
-        <p class="brand">Scott</p>
-        <p class="before-price">$ 89,99</p>
-        <p class="price">$ 69,99</p>
-        </a>
-      </div>
-
-       <div class="jacket-2">
-          <img src="/assets/images/jackets/RainyDays_Jacket3-cropped.jpg" alt="Scott insuloft superlight jacket">
-          <p class="item">Scott Insuloft Superlight Jacket</p>
-          <p class="brand">Scott</p>
-          <p class="before-price">$ 59,99</p>
-          <p class="price">$ 49,99</p>
-       </div>
-
-       <div class="jacket-3">
-          <img src="/assets/images/jackets/RainyDays_Jacket4-cropped.jpg" alt="Scott explorair jacket">
-          <p class="item">Scott Explorair Jacket</p>
-          <p class="brand">Scott</p>
-          <p class="before-price">$ 79,99</p>
-          <p class="price">$ 65,99</p>
-       </div>
-
-    </section>
-
-    <section class="jacket-row-2">
-      <div class="jacket-4">
-        <img src="/assets/images/jackets/RainyDays_Jacket6-cropped.jpg" alt="Scott goretex jacket">
-        <p class="item">Scott Goretex Jacket</p>
-        <p class="brand">Scott</p>
-        <p class="before-price">$ 199</p>
-        <p class="price">$ 159</p>
-      </div>
-
-      <div class="jacket-5">
-        <img src="/assets/images/jackets/RainyDays_Jacket1-cropped.jpg" alt="of Firstwatch floatation coat">
-        <p class="item">FirstWatch Floatation Coat</p>
-        <p class="brand">FirstWatch</p>
-        <p class="price-2">$ 199</p>
-      </div>
-
-      <div class="jacket-6">
-        <img src="/assets/images/jackets/RainyDays_Jacket5-cropped.jpg" alt="Xm xtreme wind jacket">
-        <p class="item">XM Xtreme Wind Jacket</p>
-        <p class="brand">XM Xtreme</p>
-        <p class="price-2">$ 179</p>
-      </div>
-
-    </section>
-
-    <section class="jacket-row-3">
-      <div class="jacket-7">
-        <img src="/assets/images/jackets/RainyDays_Jacket7-cropped.jpg" alt="Patagonia fleece jacket">
-        <p class="item">Patagonia Fleece Jacket</p>
-        <p class="brand">Patagonia</p>
-        <p class="price-2">$ 199</p>
-      </div>
-
-
+      <ul id="jacketSection"></ul>     
     </section>
 
     <div class="back-button-container">

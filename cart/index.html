@@ -52,37 +52,18 @@
 
   <div class="seperator-line"></div>
 
-  <section class="product-container">
-    <div class="product-image">
-      <img src="/assets/images/jackets/RainyDays_Jacket2-cropped.jpg" alt="Image of Scott Defined Tech Jacket">
-    </div>
-    <div class="product-text">
-      <h2 class="type">Scott Defined Tech Jacket</h2>
-      <p class="color-size">Color: Dark grey</p>
-      <p class="color-size">Size: XL</p>
-    </div>
-    <div class="product-price">
-      <p class="jacket-price">$ 69,99</p>
-    </div>
-    <div class="product-amount">
-      <div class="image1">
-        <img src="/assets/images/plus-symbol.png" alt="Plush icon to add one item"></div>
-      <p class="amount">1</p>
-      <div class="image2">
-        <img src="/assets/images/minus-symbol.png" alt="Minus icon to reduce one item"></div>
-    </div>
-    <div class="total-price">
-      <p class="sub">$ 69,99</p>
-    </div>
-    <div class="trashcan">
-      <a href="/shop/shop.html">
-        <img src="/assets/images/Trashcan.png" alt="Trashcan icon to remove item"></a>
-    </div>
-  </section>
+  <div id="cart-container"></div>
+
+
   <div class="back-button-container">
     <a href="/checkout/index.html"><button class="back-button">Pay now</button></a>
   </div>
  </main>
+
+ <script type="module">
+  import { displayCart } from "/scripts/cart.mjs";
+  displayCart();
+</script>
 
 
  <footer>

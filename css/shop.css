@@ -1,6 +1,23 @@
 
+.filter {
+    display: inline-block;
+    margin-left: 20px;
+}
 
-
+.filter-button {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 auto;
+    border-radius: 3px;
+    border-color: #023047;
+    color: #023047;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
 
 .page-links {
     padding-left: 2rem;

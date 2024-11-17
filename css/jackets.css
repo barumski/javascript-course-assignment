@@ -1,8 +1,48 @@
+/*Jacket shop section*/
+#jacketSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 10px;
+}
 
+#jacketSection li {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #f9f9f9;
+    font-family: 'Inter', sans-serif;
 
+}
 
+#jacketSection li img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
 
-/*----------------------------Trending-items-----------------------*/
+#jacketSection li h2 {
+    font-size: 25px;
+    color: #023047;
+    margin: 10px 0;
+} 
+
+#jacketSection li p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #023047;
+}
+
+#jacketSection li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/*Trending-items*/
 
 .trending-jacket-1 a {
     text-decoration: none;
