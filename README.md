@@ -1,1 +1,3 @@
-# javascript-course-assignment
+# Cross Course Project 
+
+![Homepage screenshot](/)
